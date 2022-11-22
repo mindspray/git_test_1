@@ -1,5 +1,5 @@
 # git_test_1
-#My First GitHub repo
+## a.k.a. My First GitHub repo
 This is my first github repo <br />
 Hello Odin! <br />
 These 3 lines utilize the `<br />` method of creating a new line.
