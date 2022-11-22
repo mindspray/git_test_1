@@ -3,24 +3,31 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>My First Repo</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="styles.css">
 		<!-- This is a comment in the head -->
 	</head>
 	<body>
 		<!-- This is a comment in the body -->
 		<h1>The ElemenTest</h1>
-		<h2>Can I weather the elements? <em>Let's find out.</em></h2>
+		<h2>Can I weather the elements? <em><span class="_">Let's find out</span>.</em></h2>
+		<hr>
+		<h3>Welcome to <em>The ElemenTest</em>, where I hope to test out as many HTML elements as I can.</h3>
 		<p>
 			Here is a paragraph element, a fundamental way to group text into a unit.
-			The width it is allowed determines the number of lines that appear if no line break
-			is forced.
+			The width the element is allowed determines the number of lines that appear if no line break is forced.
+			It is known as a block-level element, as when it is used it gets put on its own "tier" so to say, and exits out of a line if it was initiated from one, into its own "block".
 		</p>
 		<p>
-			To initiate a second paragraph, the first &lt;p&gt; element is closed and
-			a new one is created. This is the second one. To represent HTML tags within HTML, the Entity representation must be used. In this case an entity name was used (as opposed to an entity number).
+			To initiate a second paragraph, the first &lt;p&gt; element is closed and a new one is created.
+			This is the second one.
+			To represent HTML tags within HTML, the Entity representation must be used. In this case an entity name was used (as opposed to an entity <em>number</em>). An interesting exercise that I should carry out later would be to alter the ordinal number word instances above (<em>e.g., second</em>) to match the <em>n</em>th &lt;p&gt; element, so should another paragraph get added before this one, the reference would still be correct.
 		</p>
 		<p>
-			To learn more about Entities, visit the <a href="https://www.w3schools.com/html/html_entities.asp">W3 Schools page</a>.
+			To learn more about Entities, visit the <a href="https://www.w3schools.com/html/html_entities.asp">W3 Schools page</a>. The W3 Schools is a <em>great</em> reference, but <strong>not</strong> comprehensive enough to be used <em>on its own</em>. It should be supplemented by resources such as the <a href="https://developer.mozilla.org/en-US/docs/Web">Mozilla Developer Network (MDN)</a> to add the lacking depth.
+			The highlighting and links seen above are courtesy of inline-level elements. They exist, as their name indicates, inline wih the text they sit beside. Unlike the block-level elements, they don't create new lines just by existing, but are meant to alter the lines they reside in. <span class="highlight">Here is yet another example of an inline element; a span that causes highlighting.</span>
 		</p>
 		<hr>
 		<p>
@@ -32,5 +39,22 @@
 		<p>
 			The only creaking to be heard are the invited cracks of a settling house as the fireplace exhales; not poorly constructed foundation giving way to the pounding onslaught from a stone-footed trash panda.
 		</p>
+		<p>
+			The benefits of uninterrupted silence?
+		</p>
+		<ul>
+			<li>Peace. You can't put a price on that.</li>
+			<li>Clearer thoughts.</li>
+			<li>Increased productivity.</li>
+			<li>Getting in touch with oneself.</li>
+			<li>As stated above, no (<em>well, to be fair, less</em>) interruptions.</li>
+		</ul>
+		<p>The downsides of uninterrupted silence?</p>
+		<ul>
+			<li>The need to mask tinnitus.</li>
+			<li>Clearer thoughts -- Yes it's a double edged sword. Sometimes we use interruptions to avoid reflecting on difficult memories.</li>
+			<li>Losing track of time. Perhaps this should also be added to the benefits list though?</li>
+			<li>That uneasy feeling that every slight noise brings.</li>
+		</ul>
 	</body>
 </html>
