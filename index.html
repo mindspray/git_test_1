@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="author" content="Hammer">
 		<title>My First Repo</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,51 +11,177 @@
 		<!-- This is a comment in the head -->
 	</head>
 	<body>
-		<!-- This is a comment in the body -->
-		<h1>The ElemenTest</h1>
-		<h2>Can I weather the elements? <em><span class="_">Let's find out</span>.</em></h2>
-		<hr>
-		<h3>Welcome to <em>The ElemenTest</em>, where I hope to test out as many HTML elements as I can.</h3>
-		<p>
-			Here is a paragraph element, a fundamental way to group text into a unit.
-			The width the element is allowed determines the number of lines that appear if no line break is forced.
-			It is known as a block-level element, as when it is used it gets put on its own "tier" so to say, and exits out of a line if it was initiated from one, into its own "block".
-		</p>
-		<p>
-			To initiate a second paragraph, the first &lt;p&gt; element is closed and a new one is created.
-			This is the second one.
-			To represent HTML tags within HTML, the Entity representation must be used. In this case an entity name was used (as opposed to an entity <em>number</em>). An interesting exercise that I should carry out later would be to alter the ordinal number word instances above (<em>e.g., second</em>) to match the <em>n</em>th &lt;p&gt; element, so should another paragraph get added before this one, the reference would still be correct.
-		</p>
-		<p>
-			To learn more about Entities, visit the <a href="https://www.w3schools.com/html/html_entities.asp">W3 Schools page</a>. The W3 Schools is a <em>great</em> reference, but <strong>not</strong> comprehensive enough to be used <em>on its own</em>. It should be supplemented by resources such as the <a href="https://developer.mozilla.org/en-US/docs/Web">Mozilla Developer Network (MDN)</a> to add the lacking depth.
-			The highlighting and links seen above are courtesy of inline-level elements. They exist, as their name indicates, inline wih the text they sit beside. Unlike the block-level elements, they don't create new lines just by existing, but are meant to alter the lines they reside in. <span class="highlight">Here is yet another example of an inline element; a span that causes highlighting.</span>
-		</p>
-		<hr>
-		<p>
-			Imagine your own private cabin in the woods, a quiet abode far away from noise of apartment life. A rarity in New York (at least the Southern tip) but a dream worth holding onto nonetheless.
-		</p>
-		<div class="center">
-			<img class="center-img" alt="A view looking outside from within a cozy cabin's dinner table, set with red placemats and a candelabra with lit candles. It looks out through a slightly glared window onto a snowy wooded forest of pine trees." src="img/pexels-marina-leonova-9465701.jpg">
-		</div>
-		<p>
-			The only creaking to be heard are the invited cracks of a settling house as the fireplace exhales; not poorly constructed foundation giving way to the pounding onslaught from a stone-footed trash panda.
-		</p>
-		<p>
-			The benefits of uninterrupted silence?
-		</p>
-		<ul>
-			<li>Peace. You can't put a price on that.</li>
-			<li>Clearer thoughts.</li>
-			<li>Increased productivity.</li>
-			<li>Getting in touch with oneself.</li>
-			<li>As stated above, no (<em>well, to be fair, less</em>) interruptions.</li>
-		</ul>
-		<p>The downsides of uninterrupted silence?</p>
-		<ul>
-			<li>The need to mask tinnitus.</li>
-			<li>Clearer thoughts -- Yes it's a double edged sword. Sometimes we use interruptions to avoid reflecting on difficult memories.</li>
-			<li>Losing track of time. Perhaps this should also be added to the benefits list though?</li>
-			<li>That uneasy feeling that every slight noise brings.</li>
-		</ul>
+		<header class="container">
+			<h1>The ElemenTest</h1>
+			<h2>Can I weather the elements? <em><span class="_">Let's find out</span>.</em></h2>
+			<hr>
+		</header>
+		<main class="container">
+			<div class="content">
+				<!-- This is a comment in the body -->
+				<section id="the-basics">
+					<h2>
+						<a href="#the-basics">The Basics</a>
+					</h2>
+					<h3>Welcome to <em>The ElemenTest</em>, where I hope to test out as many HTML elements as I can.</h3>
+					<p>
+						In this <b>section</b>, we begin with a <strong>paragraph</strong> element, a fundamental way to group text into a unit.
+						
+						The width the element is allowed determines the number of lines that appear if no line break is forced.
+						It is known as a block-level element, as when it is used it gets put on its own "tier" so to say, and exits out of a line if it was initiated from one, into its own "block".
+					</p>
+					<p>
+						To initiate a second paragraph, the first &lt;p&gt; element is closed and a new one is created.
+						This is the second one.
+						To represent HTML tags within HTML, the Entity representation must be used. In this case an entity name was used (as opposed to an entity <em>number</em>). An interesting exercise that I should carry out later would be to alter the ordinal number word instances above (<i>e.g., second</i>) to match the <em>n</em>th &lt;p&gt; element, so should another paragraph get added before this one, the reference would still be correct.
+					</p>
+					<p>
+						To learn more about Entities, visit the <a href="https://www.w3schools.com/html/html_entities.asp">W3 Schools page</a>. The W3 Schools is a <em>great</em> reference, but <strong>not</strong> comprehensive enough to be used <em>on its own</em>. It should be supplemented by resources such as the <a href="https://developer.mozilla.org/en-US/docs/Web">Mozilla Developer Network (MDN)</a> to add the lacking depth.
+						The highlighting and links seen above are courtesy of inline-level elements. They exist, as their name indicates, inline wih the text they sit beside. Unlike the block-level elements, they don't create new lines just by existing, but are meant to alter the lines they reside in. <span class="highlight">Here is yet another example of an inline element; a span that causes highlighting.</span> Interestingly this can also be achieved by using the <strong>mark</strong> tag, such as <mark>in this example.</mark>
+					</p>
+					<p>
+						Another example of <ins>a</ins> tag<del>s</del> that can be used to achieve the same thing<del>s</del> that CSS does is the <span class="strike">del</span> tag. The second strikethrough in the previous sentence was done through CSS via the <b>text-decoration: line-through</b> style on a span selector. I should also add an <strong>add</strong> tag was used on the underlined a (which can also be achieved with the <b>text-decoration: underline</b> style), so the plural version was actually correct but the opportunity to use both tags was there and I took it :). The <em>important</em> distinction though is that using the appropriate <strong>semantic</strong> HTML tags improves accessibility, by letting software such as screenreaders know they should for example change the tone of voice when reaching that content. This does not happen with simply altering the visual appearance through CSS styles. Also worthy of note, there are tags that give the <b>bold</b> and <i>italics</i> appearance of the <strong>strong</strong> and <em>em</em> tags, but do not lend accessibility features. I've just used them; the i tag should be used when writing about foreign words, idiomatic phrases, technical terms, ship names, thoughts, etc. The b tag should be used to draw attention to a word without conveying importance. It is the least semantic of the tags. The use of these tags also helps with SEO as well as the previously mentioned boons to accessibility.
+						<p class="_"><strong>Semantic importance in order</strong></p>
+						<ol>
+							<li><em>em</em> - Changes the actual meaning of content, emphasizes text.</li>
+							<li><strong>strong</strong> - Doesn't change the meaning of content, indicates importance or seriousness.</li>
+							<li><i>i</i> - Doesn't change the meaning of content, indicates a special term.</li>
+							<li><b>b</b> - Doesn't change the meaning of content, draws attention to.</li>
+						</ol>
+						
+						<p>
+							The above content could have also been rendered as a description list, which reads more like dictionary entries. Here it is rewritten using the <i>desription lists</i> tags with their <i>dt</i> and <i>dd</i> items.
+						</p>
+						<dl>
+							<dt>
+								em
+							</dt>
+							<dd>
+								Changes the actual meaning of content, emphasizes text.
+							</dd>
+							<dt>
+								strong
+							</dt>
+							<dd>
+								Doesn't change the meaning of content, indicates importance or seriousness and draws attention.
+							</dd>
+							<dt>
+								i
+							</dt>
+							<dd>
+								Doesn't change the meaning of content, indicates a special term.
+							</dd>
+							<dt>
+								b
+							</dt>
+							<dd>
+								Doesn't change the meaning of content, draws attention to.
+							</dd>
+						</dl>
+						<p>
+							There are a number of different list attributes that can be used to affect their behavior. The start attribute changes what number an ordered list starts on, while the value attribute on a li element will change what number that item continues on. The reverse attribute	(with no value, the ="" part) will reverse the numbering.
+						</p>
+						<ul class="ul-example">
+							<li>
+								Unordered lists
+								<ul>
+									<li>
+										Can
+										<ul>
+											<li>
+												Also
+												<ul>
+													<li>
+														Be
+														<ul>
+															<li>
+																Nested
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ol class="ol-example">
+							<li>
+								And ordered lists
+								<ol>
+									<li>
+										Can
+									</li>
+									<li>
+										Also
+									</li>
+										<ol>
+											<li>
+												Be
+												<li>
+													Nested
+													<ol>
+														<li>
+															Got it?
+														</li>
+													</ol>
+												</li>
+											</li>
+										</ol>
+									</li>
+								</ol>
+							</li>
+						</ol>
+					</p>
+					<p>
+						Another set of semantic tags are the <strong>sub</strong> and <strong>sup</strong> tags, which create subscripted and superscripted text respectively. For example, if 2<sup>3</sup> = 8, then log<sub>2</sub> 8 = 3. There is also a <small>small</small> tag but it differs in appearance from <sub>subscript</sub>	text as it stays at the level of the main text.
+					</p>
+				</section>
+				<p class ="centered-text bigger-font" id="the-ideal">
+					<!-- Did you know a section separator using three asterisks is called a dinkus? I didn't until now.-->
+					* * *
+				</p>
+				<article>
+					<p>
+						Imagine your own private cabin in the woods, a quiet abode far away from noise of apartment life. A rarity in New York (at least the Southern tip) but a dream worth holding onto nonetheless.
+					</p>
+					<div class="center">
+						<img class="center-img" alt="A view looking outside from within a cozy cabin's dinner table, set with red placemats and a candelabra with lit candles. It looks out through a slightly glared window onto a snowy wooded forest of pine trees." src="img/pexels-marina-leonova-9465701.jpg">
+					</div>
+					<p>
+						The only creaking heard is the invited cracks of a settling house as the fireplace exhales; not poorly constructed foundation giving way to the pounding onslaught from a stone-footed trash panda.
+					</p>
+					<p>
+						The benefits of uninterrupted silence?
+					</p>
+					<ul>
+						<li>Peace. You can't put a price on that.</li>
+						<li>Clearer thoughts.</li>
+						<li>Increased productivity.</li>
+						<li>Getting in touch with oneself.</li>
+						<li>As stated above, no (<em>well, to be fair, less</em>) interruptions.</li>
+					</ul>
+					<p>The downsides of uninterrupted silence?</p>
+					<ul>
+						<li>The need to mask tinnitus.</li>
+						<li>Clearer thoughts -- Yes it's a double edged sword. Sometimes we use interruptions to avoid reflecting on difficult memories.</li>
+						<li>Losing track of time. Perhaps this should also be added to the benefits list though?</li>
+						<li>That uneasy feeling that every slight noise brings.</li>
+					</ul>
+				</article>
+			</div>
+			<aside>
+				<h3>Navigation</h3>
+				<ul>
+					<li><a href="#the-basics">The Basics</a></li>
+					<li><a href="#the-ideal">The Ideal</a></li>
+				</ul>
+			</aside>
+		</main>
+		<footer>
+			<hr>
+			<p><em>Forged by Hammer</em></p>
+		</footer>
 	</body>
 </html>

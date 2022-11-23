@@ -1,18 +1,42 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 body {
 	background-color: lemonchiffon;
 	font-family: Cardo, serif;
 	line-height: 1.2;
-	background-image: url("img/hammer-emoji-128px.png");
+	margin: 0;
+}
+
+.container {
+	width: 80%;
+	max-width: 1440;
+	margin: 0 auto;
+}
+
+header {
+	background-image: url(img/hammer-emoji-128px.png);
 	background-position: top right;
 	background-repeat: no-repeat;
+	background-size: contain;
+	margin-bottom: 20px;
 }
 
-._ {
-	text-decoration: underline;
+.content {
+	float: left;
+	width: 70%;
 }
 
-.highlight {
-	background-color: yellow;
+aside {
+	float: right;
+	width: 25%;
+}
+
+footer {
+	padding: 50px;
+	clear: both;
 }
 
 .center {
@@ -26,6 +50,36 @@ body {
 	display: block;
 	margin: auto;
 }
+
+.ol-example li {
+	list-style-type: upper-roman;
+}
+
+.ul-example > li > ul > li > ul > li > ul > li {
+	list-style-type: armenian;
+}
+
+/* Text stylings */
+.centered-text{
+	text-align: center;
+}
+
+.bigger-font {
+	font-weight: bolder;
+}
+
+._ {
+	text-decoration: underline;
+}
+
+.strike {
+	text-decoration: line-through;
+}
+
+.highlight {
+	background-color: yellow;
+}
+
 
 a:hover {
 	background-color: bisque;
